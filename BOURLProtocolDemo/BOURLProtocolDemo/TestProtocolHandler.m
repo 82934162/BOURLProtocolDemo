@@ -3,15 +3,13 @@
 //  ArchUtilDemo
 //
 //  Created by Boris on 17/3/1.
-//  Copyright © 2017年 aaronWang. All rights reserved.
+//  Copyright © 2017年 Boris. All rights reserved.
 //
 
 #import "TestProtocolHandler.h"
 #import "AppDelegate.h"
 
 @implementation TestProtocolHandler
-
-
 
 - (void)handleURLProtocolRequest:(NSURLRequest *)request block:(BOURLProtocolBLock)block
 {

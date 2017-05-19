@@ -21,6 +21,7 @@ static NSMutableDictionary *_handlerMap;
 @end
 
 @implementation BOURLProtocol
+
 +(void)initialize
 {
     if(self == BOURLProtocol.class)
@@ -28,6 +29,7 @@ static NSMutableDictionary *_handlerMap;
         _handlerMap = [NSMutableDictionary dictionary];
     }
 }
+
 #pragma mark - Public
 
 + (void)registerHandler:(Class<BOURLProtocolHandleProtocol>)handlerClass
@@ -46,7 +48,6 @@ static NSMutableDictionary *_handlerMap;
         [_handlerMap removeObjectForKey:path];
     }
 }
-
 
 #pragma mark - NSURLProtocol
 
@@ -139,7 +140,6 @@ static NSMutableDictionary *_handlerMap;
     
     self.handler = 0;
 }
-
 
 - (void)stopLoading
 {

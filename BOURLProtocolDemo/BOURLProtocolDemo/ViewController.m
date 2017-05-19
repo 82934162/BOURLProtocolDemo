@@ -39,24 +39,15 @@
                                     completionHandler:
                               ^(NSData *data, NSURLResponse *response, NSError *error)
     {
-//        NSString *string = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
         NSLog(@"%@", [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil]);
     }];
     
-    // 启动任务
     [task resume];
-    
-    
-//    NSLog(@"--%ld--",data.length);
-//    
-//
-//    NSLog(@"--%@--",string);
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
